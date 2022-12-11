@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="./noramalize.css" />
+    <!-- main  -->
+    <link rel="stylesheet" href="./main.css" />
+
+    <title>Edit Task || Final</title>
+  </head>
+  <body>
+    <div class="container">
+      <form class="single-task-form">
+        <h4>Edit Task</h4>
+        <div class="form-control">
+          <label>Task ID</label>
+          <p class="task-edit-id"></p>
+        </div>
+        <div class="form-control">
+          <label for="name">Name :
+          <input type="text" name="name" aria-label="Name" class="task-edit-name"/>
+          </label>
+        </div>
+        <div class="form-control">
+          <label for="completed">completed :
+          <input type="checkbox" name="completed" aria-label="Name" class="task-edit-completed" />
+          </label>
+        </div>
+        <button type="submit" class="block btn task-edit-btn">edit</button>
+        <div class="form-alert"></div>
+      </form>
+      <a href="index.html" class="btn back-link">back to tasks</a>
+    </div>
+    <!-- axios -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  <!-- js -->
+    <script src="./edit-task.js"></script>
+  </body>
+</html>
